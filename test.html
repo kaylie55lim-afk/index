@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KAYLIE'S WEBSITE</title>
+    <link rel="stylesheet" href="biodatastyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>HEADER</h1>
+    </div>
+
+    <!-- NAVIGATOR -->
+    <div class="topnav">
+        <a href="#" onclick="showPage('home'); return false;">HOME</a>
+        <a href="#" onclick="showPage('table'); return false;">TABLE</a>
+        <a href="#" onclick="showPage('list'); return false;">LIST</a>
+        <a href="#" onclick="showPage('sts'); return false;">STS</a>
+    </div>
+
+
+    <!-- HOME -->
+    <div id="home" class="page">
+
+        <h1>BIODATA DIRI</h1>
+        <h2 class="welcome">✧ Selamat Datang Pada Web Pertama Saya ✧</h2>
+
+        <p>
+            <img src="itsme.jpeg" alt="Kaylie" class="foto">
+        </p>
+
+        <div class="info">
+            <h4>
+                Nama Lengkap : Kaylie Scarlet Lim
+                <br>
+                Tempat &amp; Tanggal Lahir : Jakarta, 23 Mei 2026
+                <br><br>
+                Email : kaylie_10129@smp.santaursulajakarta.sch.id
+                <br><br>
+                Zodiak : Gemini ♊
+                <br>
+                Hobi : Menari, Nonton Anime, Baca Manga
+            </h4>
+        </div>
+
+        <!-- MAKANAN FAVORIT -->
+        <h2 class="section-title">MAKANAN FAVORIT</h2>
+
+        <div class="makan">
+            <div class="sushi">
+                <img src="sushi.jpg" alt="Sushi" width="200" height="200">
+                <p>SUSHI</p>
+            </div>
+
+            <div class="curry">
+                <img src="curry.jpg" alt="Curry" width="200" height="200">
+                <p>JAPANESE CURRY</p>
+            </div>
+
+            <div class="adobo">
+                <img src="adobo.jpg" alt="Adobo" width="200" height="200">
+                <p>FILIPINO PORK ADOBO</p>
+            </div>
+
+            <div class="toge">
+                <img src="toge.jpg" alt="Tumis Tauge" width="200" height="200">
+                <p>TUMIS TAUGE</p>
+            </div>
+        </div>
+
+        <!-- MINUMAN FAVORIT -->
+        <h2 class="section-title">MINUMAN FAVORIT</h2>
+
+        <div class="minum">
+            <div class="kopi">
+                <img src="kopi.jpg" alt="Kopi Susu" width="200" height="200">
+                <p>KOPI SUSU</p>
+            </div>
+
+            <div class="mango">
+                <img src="mango yakult.jpg" alt="Mango Yakult" width="200" height="200">
+                <p>MANGO YAKULT</p>
+            </div>
+
+            <div class="boba">
+                <img src="boba.jpg" alt="Boba" width="200" height="200">
+                <p>CHATIME BOBA</p>
+            </div>
+        </div>
+
+        <!-- TEMPAT FAVORIT -->
+        <h2 class="section-title">TEMPAT FAVORIT</h2>
+
+        <div class="tempat">
+            <div class="pantai">
+                <img src="pantai.jpeg" alt="Pantai" width="200" height="200">
+                <p>PANTAI</p>
+            </div>
+
+            <div class="yokohama">
+                <img src="yokohama.jpeg" alt="Yokohama" width="200" height="200">
+                <p>YOKOHAMA SEA SIDE</p>
+            </div>
+
+            <div class="rumah">
+                <img src="rumah.jpg" alt="Rumah" width="200" height="200">
+                <p>RUMAH</p>
+            </div>
+
+            <div class="studio">
+                <img src="studio.jpg" alt="Dance Studio" width="200" height="200">
+                <p>DANCE STUDIO</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- TABLE -->
+    <div id="table" class="page">
+
+        <h1>MY TABLE</h1>
+
+        <table>
+            <tr>
+                <th>NO</th>
+                <th>NAMA MAKANAN</th>
+                <th>ASAL</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sushi</td>
+                <td>Jepang</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Japanese Curry</td>
+                <td>Jepang</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Filipino Pork Adobo</td>
+                <td>Filipina</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Tumis Tauge</td>
+                <td>Indonesia</td>
+            </tr>
+        </table>
+
+        <h2>COLSPAN DAN ROWSPAN</h2>
+
+        <table>
+            <tr>
+                <th rowspan="2">NO</th>
+                <th rowspan="2">NAMA</th>
+                <th colspan="2">NILAI</th>
+            </tr>
+            <tr>
+                <th>ULANGAN 1</th>
+                <th>ULANGAN 2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kaylie</td>
+                <td>90</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Amara</td>
+                <td>85</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vina</td>
+                <td>92</td>
+                <td>89</td>
+            </tr>
+        </table>
+
+        <h2>TABLE MERGE</h2>
+
+        <table class="merge">
+            <tr>
+                <th rowspan="3">A</th>
+                <th rowspan="2">B</th>
+                <th colspan="2">C</th>
+                <th rowspan="3">D</th>
+                <th rowspan="4">E</th>
+                <th rowspan="2">N</th>
+                <th rowspan="6">H</th>
+            </tr>
+            <tr>
+                <th>F</th>
+                <th>G</th>
+            </tr>
+            <tr>
+                <th>I</th>
+                <th>J</th>
+                <th>K</th>
+                <th rowspan="2">O</th>
+            </tr>
+            <tr>
+                <th colspan="5">M</th>
+            </tr>
+            <tr>
+                <th rowspan="2">P</th>
+                <th colspan="2">Q</th>
+                <th rowspan="2">R</th>
+                <th>U</th>
+                <th>V</th>
+                <th>W</th>
+            </tr>
+            <tr>
+                <th>S</th>
+                <th>T</th>
+                <th>X</th>
+                <th>Y</th>
+                <th>Z</th>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <!-- LIST -->
+    <div id="list" class="page">
+
+        <h1>MY LIST</h1>
+
+        <h2 class="list-title">Daftar Buah-Buahan</h2>
+
+        <div class="fruit-list">
+            <ol type="I">
+                <li>Jambu</li>
+                <li id="buah-berbeda">Mangga</li>
+                <li>Pisang</li>
+                <li>Buah Naga</li>
+                <li>Stroberi</li>
+                <li>Durian</li>
+                <li>Apel</li>
+                <li>Pir</li>
+                <li>Pepaya</li>
+                <li>Jeruk</li>
+            </ol>
+        </div>
+
+        <h2 class="list-title">Lorem Ipsum</h2>
+
+        <div class="lorem-list">
+            <ul type="square">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </div>
+
+        <h2 class="list-title">List Icon</h2>
+
+<ul class="icon-list">
+    <li><i class="fas fa-heart"></i> Love</li>
+    <li><i class="fas fa-star"></i> Star</li>
+    <li><i class="fas fa-music"></i> Music</li>
+    <li><i class="fas fa-camera"></i> Camera</li>
+    <li><i class="fas fa-smile"></i> Smile</li>
+</ul>
+        </div>
+
+    </div>
+
+
+    <!-- STS -->
+    
+<div id="sts" class="page">
+    <div class="sts-site">
+
+        <header class="sts-header">
+            <h2>
+                Don't know where to go in Japan? 🤔
+                <br>
+                ~ By Kaylie 92/23 ~
+            </h2>
+
+            <h1>~ WELCOME TO POKEPARK KANTO ~</h1>
+
+            <p>
+                <img src="pokepark kanto.jpg"
+                     alt="PokePark Kanto"
+                     class="pokepark">
+            </p>
+        </header>
+
+        <div class="sts-container">
+
+            <div class="sts-foto">
+                <img src="poster.png" alt="PokePark poster">
+                <img src="flying pikachu.jpg" alt="Flying Pikachu">
+                <img src="umbreon.jpg" alt="Umbreon">
+                <img src="battle.jpg" alt="Pokémon battle">
+            </div>
+
+            <div class="sts-text">
+                <h3>~ POKEPARK KANTO, TOKYO, JAPAN ~</h3>
+
+                <p>
+                    PokePark Kanto is a place that I really want to visit
+                    because it brings the world of Pokémon into real life.
+                    It is located in Japan and is made for people who love
+                    Pokémon and want to experience something different.
+                    For me, PokePark Kanto sounds like a dream place because
+                    I think it would be really cool if the Pokémon world
+                    could exist in real life. Instead of only seeing Pokémon
+                    in games, cartoons, or pictures, visitors can explore
+                    a place inspired by the Pokémon world.
+                </p>
+
+                <p>
+                    One of the most interesting things about PokePark Kanto
+                    is the atmosphere. The park is designed to make visitors
+                    feel like they are exploring a world full of Pokémon.
+                    There are different areas to discover, and each area can
+                    have its own theme. Walking around the park would probably
+                    feel like going on a Pokémon adventure. Visitors can explore,
+                    take pictures, and enjoy the environment while feeling like
+                    they are inside the Pokémon world.
+                </p>
+
+                <p>
+                    Another thing that makes PokePark Kanto interesting is
+                    the Pokémon themselves. Seeing familiar Pokémon characters
+                    in the park would be really exciting, especially for fans
+                    who have grown up watching Pokémon or playing the games.
+                    I would probably spend a lot of time looking for my
+                    favorite Pokémon and taking pictures with them. It would
+                    also be fun to see Pokémon that I already know from the
+                    games in a real place.
+                </p>
+
+                <p>
+                    The park would also be a great place for taking photos.
+                    There can be many colorful and cute places that look
+                    really good in pictures. I would definitely take pictures
+                    with Pokémon, decorations, and different areas around
+                    the park. These photos could become great memories that
+                    I can look back on after the trip.
+                </p>
+
+                <p>
+                    I think PokePark Kanto would also be fun to visit with
+                    friends or family. We could explore the park together,
+                    take pictures, and talk about our favorite Pokémon.
+                    We could also compare which Pokémon we like the most
+                    and which part of the park is our favorite. Going
+                    together would make the experience even more fun
+                    and memorable.
+                </p>
+
+                <p>
+                    What makes PokePark Kanto special to me is how it
+                    connects something fictional with a real experience.
+                    Pokémon started as a game, but it has become popular
+                    all around the world. Having a place where fans can
+                    experience the Pokémon world in person makes it
+                    feel even more special.
+                </p>
+
+                <p>
+                    If I ever get the chance to visit Japan, PokePark Kanto
+                    would definitely be on my list. I would want to spend
+                    a whole day exploring the park, taking lots of pictures,
+                    finding my favorite Pokémon, and buying a souvenir.
+                    Overall, PokePark Kanto sounds like an exciting
+                    destination for Pokémon fans. For me, the best part
+                    would be feeling like I could step into the Pokémon
+                    world for a while.
+                </p>
+            </div>
+
+            <div class="sts-foto">
+                <img src="pikaeeve.jpg" alt="Pikachu and Eevee">
+                <img src="pikashow.jpg" alt="Pikachu show">
+                <img src="charizard.jpg" alt="Charizard">
+                <img src="pokempark pic.jpg" alt="Pokémon Park">
+            </div>
+
+        </div>
+
+        <div class="sts-closing">
+            <h2>✨ Ready for your next Pokémon adventure? ✨</h2>
+
+            <p>
+                PokePark Kanto would definitely be a fun place to visit,
+                especially for Pokémon fans. From exploring the park to
+                taking pictures with Pokémon, there would be so many
+                things to enjoy. If I ever get the chance to visit Japan,
+                this would definitely be one of the places I want to go.
+                So, are you ready to step into the Pokémon world? ⚡️
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>| Kaylie Scarlet Lim |</p>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function showPage(pageName) {
+            var pages = document.getElementsByClassName("page");
+
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = "none";
+            }
+
+            document.getElementById(pageName).style.display = "block";
+
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+</html>
